@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">                 
-        
-<title>Lizzie Karr Music</title>
-<meta name="fb_admins_meta_tag" content="">
-<meta http-equiv="etag" content="3738fde9dbce4ac318f655810ee18b90">
-<meta property="og:title" content="lizziekarrmusic">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="lizziekarrmusic">
-<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+<html ng-app = 'lk_music'>
+
+<head>
+  <meta name="author" content="Lizzie K">
+  <meta name="description" content="Lizzie Karr Music">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Lizzie Karr Music</title>
+</head>
+
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>Media</li>
+    <li>Shows</li>
+    <li>Shop</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<body ng-controller = 'PlayController'>
+
+<!--  <div id="my-store-11522157"></div>
+  <div>
+  <script type="text/javascript" src="https://app.ecwid.com/script.js?11522157&data_platform=code&data_date=2017-05-10" charset="utf-8"></script>
+  <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-11522157");</script>
+</div>-->
+
+<div class = "sect sectOne">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/g-pNeF-Q3dk" frameborder="0" allowfullscreen ng-show = "playerShowing"></iframe>
+
+  <h1><button ng-click='play'><img src="https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/play_button.png"></button></h1>
+
+</div>
+<div class = "subSubSect"></div>
+<div class = "subSect">
+<h1>hi</h1>
+  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1808982734/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://lizziekarr.bandcamp.com/album/like-its-bad">Like It&#39;s Bad by Lizzie Karr</a></iframe>
+</div>
+<div class = "subSubSect"></div>
+<div class = "sect sectTwo">
+  <h1><button ng-click = 'play'><img src="https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/play_button.png"></button></h1>
+</div>
+<div class = "subSubSect"></div>
+<div class = "subSect">
+
+</div>
+<div class = "subSubSect"></div>
+<div class = "sect sectThree">
+  <h1><button ng-click = 'play'><img src="https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/play_button.png"></button></h1>
+</div>
+
+</body>
+
+<script>"./app.js"</script>
+<script>"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"</script>
+<script>"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"</script>
+<script>"https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"</script>
+<script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"</script>
 
 </html>

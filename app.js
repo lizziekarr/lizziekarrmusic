@@ -1,18 +1,23 @@
 (function(){
-	'use strict';
-	console.log('hi1')
-	angular
-		.module('app', ['ngRoute', 'ngCookies'])
-		.config(config)
-		.run(run);
+'use strict';
+angular
+	.module('app', ['ngRoute', 'ngCookies'])
+	.config(config)
+	.run(run);
 
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config($routeProvider, $locationProvider) {
+		console.log('hi1')
 		$routeProvider
 				.when('/', {
 						controller: 'PlayController',
-						templateUrl: 'index.html',
-						controllerAs: 'playCtrl'
+						templateUrl: './index.html',
+						controllerAs: 'PlayController'
+				})
+				.when('/profile', {
+						controller: 'ProfileController',
+						templateUrl: './profile/index.html',
+						controllerAs: 'ProfileController'					
 				})
 }
 
@@ -21,8 +26,4 @@ function run($rootScope, $location, $cookieStore, $http) {
 		// keep user logged in after page refresh
 		$rootScope.globals = $cookieStore.get('globals') || {};
 }
-
-
-
-
 })();

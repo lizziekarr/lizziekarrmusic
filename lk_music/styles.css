@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 20px;
+}
+
+html, body {
+	height: 100%;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, .6);
+	z-index: 100;
+}
+
+li {
+	color: white;
+	line-height: 0;
+	font-size: 16px;
+	padding: 30px;
+	float: left;
+	list-style-type: none;
+}
+
+li:hover {
+	position: relative;
+	background-color: rgba(255, 255, 255, .6);
+	height: 0;
+}
+
+.sect {
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.subSect {
+	height: 45%;
+	/*background-color: #ce41c8;*/
+	background-color: radial-gradient(circle, #4a1ca0, #fff);
+}
+
+.subSubSect {
+	height: 2%;
+	background: radial-gradient(farthest-side, #4a1ca0, #d9c7f9);
+}
+
+.sectOne {
+	background-image: url("https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/your-number-14.jpg");
+}
+
+.sectTwo {
+	background-image: url("https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/asphixiate-1.jpg");
+}
+
+.sectThree {
+	background-image: url("https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/Screen+Shot+2017-05-04+at+6.20.17+PM.png");
+}
+
+.fa {
+	color: white;
+}
+
+.store {
+	width: 50%
+	height: 50%
+}

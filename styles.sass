@@ -1,0 +1,198 @@
+
+//variables
+$pink: #fedaf0
+$gray: #202020
+$font1: 'Monoton', cursive
+$font2: 'Ruslan Display', cursive
+$font3: 'Allerta Stencil', sans-serif
+$font4: 'Syncopate', sans-serif
+
+//keyframes
+
+@keyframes tip
+  0%
+    transform: none
+  50%
+    transform: translate(3px)
+  100%
+    transform: none
+
+//styles
+*
+  margin: 0
+  padding: 0
+  border: 0
+
+.container-fluid
+  width: 100%
+  margin: 0
+  padding: 0
+
+  a, h2
+    color: $pink
+    font-family: $font4
+    font-size: 2vw
+    transition: all 1s ease-in-out
+    &:hover
+      cursor: pointer
+      color: #fff
+      text-decoration: none
+    &.lizzie
+      font-size: 3.5vw
+
+  .triangles
+    width: 100%
+    margin-top: 92vh
+    height: 8vh
+    display: flex
+    position: absolute
+    justify-content: space-between
+    align-items: flex-end
+    .triangle
+    position: fixed
+    background-color: $gray
+    padding: 20px 0
+    //&.left
+      transform: rotate(45deg)
+    //&.right
+      transform: rotate(135deg)
+
+  header
+    min-height: 8vh
+    position: fixed
+    width: 100%
+    background-color: $gray
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .fa
+      color: $pink
+      font-size: 3vw
+      @media screen and (max-width: 1024px)
+        padding: 0 20px
+
+
+
+body
+  section
+    height: 100vh
+    margin: 0
+    padding: 0
+    background-color: $gray
+    background-attachment: fixed
+    background-position: center center
+    background-size: cover
+    &.zero
+      display: none
+    &.one
+      background-image: url('https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/your-number-14.jpg')
+      background-position: right center
+    &.two
+      background-image: url('https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/asphixiate-1.jpg')
+    &.three
+      background-image: url('https://s3-us-west-2.amazonaws.com/lizziekarrmusic.com/Screen+Shot+2017-05-04+at+6.20.17+PM.png')
+    .email
+      padding-top: 30vh
+      text-align: center
+      font-size: 6vw
+      color: $pink
+      font-family: $font4
+    .follow
+      display: flex
+      justify-content: space-around
+      flex-flow: row wrap
+      align-items: center
+      a
+        text-align: center
+        margin-top: 20vh
+        width: 15vw
+    .videos
+      height: 70vh
+      margin: 0
+      padding-top: 20vh
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-around
+      align-items: center
+      .titles
+        display: flex
+        flex-direction: column
+        @media screen and (max-width: 850px)
+          flex-flow: row wrap
+        justify-content: space-around
+        h2
+          text-align: justify
+          font-size: 1.5vw
+          &:hover
+            animation: tip 2s
+          @media screen and (max-width: 800px)
+            font-size: 20px
+            padding: 20px
+      .play
+        .fa
+          //position: absolute
+          color: $pink
+          padding: 10vw 18vw
+          font-size: 8vw
+          border: solid $pink 1px
+          border-radius: 10px
+          transition: all 1s ease-in-out
+          &:hover
+            color: #fff
+            cursor: pointer
+          @media screen and (max-width: 1024px)
+            margin-top: 10vh
+        iframe
+          display: none
+          padding: 5vw
+          border-radius: 10px
+          border: solid $pink 1px
+
+
+    .download
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-around
+      align-items: center
+      width: 70vw
+      margin-left: 15vw
+      @media screen and (max-width: 600px)
+        flex-flow: column nowrap
+        justify-content: space-around
+      a
+        text-align: center
+        border-top: solid $pink 1px
+        border-bottom: solid $pink 1px
+        font-size: 2.2vw
+        margin-top: 26vh
+        width: 25vw
+        padding: 20px
+        color: $pink
+        font-family: $font4
+        &:hover
+          text-decoration: none
+          cursor: pointer
+          color: #fff
+          border-color: #fff
+        @media screen and (max-width: 600px)
+          margin-top: 12vh
+          font-size: 16px
+          width: 50vw
+
+  .diary
+    background-color: $gray
+    padding-bottom: 12vh
+    p
+      width: 60vw
+      margin-left: 20vw
+      text-align: justify
+      padding: 30px 0
+      font-family: $font4
+      color: $pink
+      font-size: 2vw
+      line-height: 2
+      @media screen and (max-width: 800px)
+        width: 90vw
+        margin-left: 5vw
+        font-size: 16px
